@@ -177,15 +177,9 @@
       
         <p>目前我使用的hexo主题是yilia，需修改Hexo左侧栏样式.</p>
 <h2 id="分为以下几步"><a href="#分为以下几步" class="headerlink" title="分为以下几步"></a>分为以下几步</h2><h3 id="1-找到样式文件-以修改左侧栏样式为例"><a href="#1-找到样式文件-以修改左侧栏样式为例" class="headerlink" title="1.找到样式文件,以修改左侧栏样式为例"></a>1.找到样式文件,以修改左侧栏样式为例</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">themes\yilia\<span class="built_in">source</span>-src\left.scss</span><br></pre></td></tr></table></figure>
-
-<p>修改完样式后，若不生效可增加！important，还不生效，请往下看</p>
-<h3 id="2-找到ejs文件，增加style修改"><a href="#2-找到ejs文件，增加style修改" class="headerlink" title="2.找到ejs文件，增加style修改"></a>2.找到ejs文件，增加style修改</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">themes\yilia\layout\partial\left-col.ejs</span><br></pre></td></tr></table></figure>
-
-<p>在div中增加style=””样式即可</p>
-<h3 id="3-样式不生效可运行以下命令"><a href="#3-样式不生效可运行以下命令" class="headerlink" title="3.样式不生效可运行以下命令"></a>3.样式不生效可运行以下命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-
-<p>清理并重新加载</p>
-
+        
+          <a class="article-more-a" href="/2019/10/18/My-New-Post/#more">more >></a>
+        
       
 
       
@@ -193,6 +187,21 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -334,7 +343,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -386,6 +395,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
