@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo 修改原有样式 | 小嘟咕噜的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="目前我使用的hexo主题是yilia，需修改Hexo左侧栏样式. 1.找到样式文件,以修改左侧栏样式为例1themes\yilia\source-src\left.scss">
+  <meta name="description" content="目前我使用的hexo主题是yilia，以修改左侧栏样式为例介绍以下方法. 1. 找到打包好的样式文件themes\yilia\source\main.0cf68a.css 找到相应位置直接修改">
 <meta name="keywords" content="hexo,yilia">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 修改原有样式">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;18&#x2F;My-New-Post&#x2F;index.html">
 <meta property="og:site_name" content="小嘟咕噜的博客">
-<meta property="og:description" content="目前我使用的hexo主题是yilia，需修改Hexo左侧栏样式. 1.找到样式文件,以修改左侧栏样式为例1themes\yilia\source-src\left.scss">
+<meta property="og:description" content="目前我使用的hexo主题是yilia，以修改左侧栏样式为例介绍以下方法. 1. 找到打包好的样式文件themes\yilia\source\main.0cf68a.css 找到相应位置直接修改">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-29T01:43:07.614Z">
+<meta property="og:updated_time" content="2019-10-29T01:57:46.505Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="小嘟咕噜的博客" type="application/atom+xml">
@@ -176,19 +176,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>目前我使用的hexo主题是yilia，需修改Hexo左侧栏样式.</p>
-<h3 id="1-找到样式文件-以修改左侧栏样式为例"><a href="#1-找到样式文件-以修改左侧栏样式为例" class="headerlink" title="1.找到样式文件,以修改左侧栏样式为例"></a>1.找到样式文件,以修改左侧栏样式为例</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">themes\yilia\<span class="built_in">source</span>-src\left.scss</span><br></pre></td></tr></table></figure>
+        <p>目前我使用的hexo主题是yilia，以修改左侧栏样式为例介绍以下方法.</p>
+<h3 id="1-找到打包好的样式文件"><a href="#1-找到打包好的样式文件" class="headerlink" title="1. 找到打包好的样式文件"></a>1. 找到打包好的样式文件</h3><p>themes\yilia\source\main.0cf68a.css 找到相应位置直接修改</p>
 <a id="more"></a>
-<p>修改完样式后，需重新build方生效</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">themes\yilia\<span class="built_in">source</span>-src\left.scss</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-找到样式文件进行修改"><a href="#2-找到样式文件进行修改" class="headerlink" title="2. 找到样式文件进行修改"></a>2. 找到样式文件进行修改</h3><p>themes\yilia\source-src\left.scss</p>
+<p>！！！但修改完样式后，需重新build方可生效</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line">npm run dev</span><br><span class="line">npm run build</span><br></pre></td></tr></table></figure>
 
 
-<h3 id="2-找到ejs文件，增加style修改"><a href="#2-找到ejs文件，增加style修改" class="headerlink" title="2.找到ejs文件，增加style修改"></a>2.找到ejs文件，增加style修改</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">themes\yilia\layout\partial\left-col.ejs</span><br></pre></td></tr></table></figure>
-
+<h3 id="3-找到ejs文件，增加style修改"><a href="#3-找到ejs文件，增加style修改" class="headerlink" title="3. 找到ejs文件，增加style修改"></a>3. 找到ejs文件，增加style修改</h3><p>themes\yilia\layout\partial\left-col.ejs</p>
 <p>在div中增加style=””样式即可</p>
-<h3 id="3-样式不生效可运行以下命令"><a href="#3-样式不生效可运行以下命令" class="headerlink" title="3.样式不生效可运行以下命令"></a>3.样式不生效可运行以下命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s  本地预览</span><br></pre></td></tr></table></figure>
+<h3 id="当修改完成样式不生效，可运行以下命令"><a href="#当修改完成样式不生效，可运行以下命令" class="headerlink" title="当修改完成样式不生效，可运行以下命令"></a>当修改完成样式不生效，可运行以下命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean   清除</span><br><span class="line">$ hexo g     重新加载</span><br><span class="line">$ hexo s   本地预览</span><br></pre></td></tr></table></figure>
 
-<p>清理并重新加载</p>
+<p>清理并重新加载后上传</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d   上传到远端</span><br></pre></td></tr></table></figure>
 
       
@@ -327,7 +328,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-找到样式文件-以修改左侧栏样式为例"><span class="toc-number">1.</span> <span class="toc-text">1.找到样式文件,以修改左侧栏样式为例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-找到ejs文件，增加style修改"><span class="toc-number">2.</span> <span class="toc-text">2.找到ejs文件，增加style修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-样式不生效可运行以下命令"><span class="toc-number">3.</span> <span class="toc-text">3.样式不生效可运行以下命令</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-找到打包好的样式文件"><span class="toc-number">1.</span> <span class="toc-text">1. 找到打包好的样式文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-找到样式文件进行修改"><span class="toc-number">2.</span> <span class="toc-text">2. 找到样式文件进行修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-找到ejs文件，增加style修改"><span class="toc-number">3.</span> <span class="toc-text">3. 找到ejs文件，增加style修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#当修改完成样式不生效，可运行以下命令"><span class="toc-number">4.</span> <span class="toc-text">当修改完成样式不生效，可运行以下命令</span></a></li></ol>
                     </div>
                 </span>
             </div>
