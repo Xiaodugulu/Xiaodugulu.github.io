@@ -6,15 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 小嘟咕噜的博客</title>
+  <title>Linux docker+docker compose安装 | 小嘟咕噜的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="前端，JavaScript">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小嘟咕噜的博客">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;index.html">
+  <meta name="description" content="1.进入docker官网，找到文档页面，下拉找到小企鹅进入（文档页面网址： https:&#x2F;&#x2F;docs.docker.com&#x2F;）">
+<meta name="keywords" content="docker,docker compose,Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux docker+docker compose安装">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;21&#x2F;Linux%20docker+docker%20compose%E5%AE%89%E8%A3%85&#x2F;index.html">
 <meta property="og:site_name" content="小嘟咕噜的博客">
+<meta property="og:description" content="1.进入docker官网，找到文档页面，下拉找到小企鹅进入（文档页面网址： https:&#x2F;&#x2F;docs.docker.com&#x2F;）">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;21&#x2F;img&#x2F;docker.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;21&#x2F;img&#x2F;docker1.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;21&#x2F;img&#x2F;docker2.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;21&#x2F;img&#x2F;docker3.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;21&#x2F;img&#x2F;docker4.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;21&#x2F;img&#x2F;docker5.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;21&#x2F;img&#x2F;docker6.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;21&#x2F;img&#x2F;docker7.png">
+<meta property="og:updated_time" content="2020-04-21T07:26:07.003Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;21&#x2F;img&#x2F;docker.png">
   
     <link rel="alternative" href="/atom.xml" title="小嘟咕噜的博客" type="application/atom+xml">
   
@@ -153,36 +165,84 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Linux docker+docker compose安装" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/21/Linux%20docker+docker%20compose%E5%AE%89%E8%A3%85/" class="archive-article-date">
-  	<time datetime="2020-04-21T06:01:58.354Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-21</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/21/Linux%20docker+docker%20compose%E5%AE%89%E8%A3%85/">Linux docker+docker compose安装</a>
+    <h1 class="article-title" itemprop="name">
+      Linux docker+docker compose安装
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/04/21/Linux%20docker+docker%20compose%E5%AE%89%E8%A3%85/" class="archive-article-date">
+  	<time datetime="2020-04-21T06:01:58.354Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-进入docker官网，找到文档页面，下拉找到小企鹅进入（文档页面网址：-https-docs-docker-com-）"><a href="#1-进入docker官网，找到文档页面，下拉找到小企鹅进入（文档页面网址：-https-docs-docker-com-）" class="headerlink" title="1.进入docker官网，找到文档页面，下拉找到小企鹅进入（文档页面网址： https://docs.docker.com/）"></a>1.进入docker官网，找到文档页面，下拉找到小企鹅进入（文档页面网址： <a href="https://docs.docker.com/）" target="_blank" rel="noopener">https://docs.docker.com/）</a></h3><p><img src="../img/docker.png" alt="Alt"></p>
+<a id="more"></a>
+
+<h3 id="2-找到左侧install，在右侧找到你的操作系统，我们服务器是linux内核，点击Linux-platforms"><a href="#2-找到左侧install，在右侧找到你的操作系统，我们服务器是linux内核，点击Linux-platforms" class="headerlink" title="2.找到左侧install，在右侧找到你的操作系统，我们服务器是linux内核，点击Linux platforms"></a>2.找到左侧install，在右侧找到你的操作系统，我们服务器是linux内核，点击Linux platforms</h3><p><img src="../img/docker1.png" alt="Alt"></p>
+<p>从以下选择你的系统，我们服务器为Ubuntu，点击进入<br><img src="../img/docker2.png" alt="Alt"></p>
+<h3 id="3-页面显示支持的Ubuntu版本，你的一定得是其中之一"><a href="#3-页面显示支持的Ubuntu版本，你的一定得是其中之一" class="headerlink" title="3.页面显示支持的Ubuntu版本，你的一定得是其中之一"></a>3.页面显示支持的Ubuntu版本，你的一定得是其中之一</h3><p><img src="../img/docker3.png" alt="Alt"></p>
+<h3 id="4-按照页面步骤进行安装："><a href="#4-按照页面步骤进行安装：" class="headerlink" title="4.按照页面步骤进行安装："></a>4.按照页面步骤进行安装：</h3><p>如果之前安装过，就先卸载，否则跳过<br><img src="../img/docker4.png" alt="Alt"></p>
+<h3 id="现在就要进行真正的安装啦，-复制即可，想自己敲更好。（我只是给显示需要复制的内容，不要从这里复制，从官网直接复制更保险方便，且不容易漏掉一些小短杠-‘-’）"><a href="#现在就要进行真正的安装啦，-复制即可，想自己敲更好。（我只是给显示需要复制的内容，不要从这里复制，从官网直接复制更保险方便，且不容易漏掉一些小短杠-‘-’）" class="headerlink" title="现在就要进行真正的安装啦， 复制即可，想自己敲更好。（我只是给显示需要复制的内容，不要从这里复制，从官网直接复制更保险方便，且不容易漏掉一些小短杠 ‘-’）"></a>现在就要进行真正的安装啦， 复制即可，想自己敲更好。（我只是给显示需要复制的内容，不要从这里复制，从官网直接复制更保险方便，且不容易漏掉一些小短杠 ‘-’）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br></pre></td></tr></table></figure>
+<p>‘\’表示这行没完下行继续，这一段一起复制。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install \</span><br><span class="line">    apt-transport-https \</span><br><span class="line">    ca-certificates \</span><br><span class="line">    curl \</span><br><span class="line">    gnupg-agent \</span><br><span class="line">    software-properties-common</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-key fingerprint 0EBFCD88</span><br></pre></td></tr></table></figure>
+<p>显示以下内容为安装正常</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pub   rsa4096 2017-02-22 [SCEA]</span><br><span class="line">      9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88</span><br><span class="line">uid           [ unknown] Docker Release (CE deb) &lt;docker@docker.com&gt;</span><br><span class="line">sub   rsa4096 2017-02-22 [S]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ sudo add-apt-repository \</span><br><span class="line">   <span class="string">"deb [arch=amd64] https://download.docker.com/linux/ubuntu \</span></span><br><span class="line"><span class="string">   <span class="variable">$(lsb_release -cs)</span> \</span></span><br><span class="line"><span class="string">   stable"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install docker-ce docker-ce-cli containerd.io</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-cache madison docker-ce</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install docker-ce=&lt;VERSION_STRING&gt; docker-ce-cli=&lt;VERSION_STRING&gt; containerd.io</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo docker run hello-world</span><br></pre></td></tr></table></figure>
+<h3 id="5-能正常运行便是安装成功，接下来安装docker-compose，先找进入以下页面，选择Linux："><a href="#5-能正常运行便是安装成功，接下来安装docker-compose，先找进入以下页面，选择Linux：" class="headerlink" title="5.能正常运行便是安装成功，接下来安装docker-compose，先找进入以下页面，选择Linux："></a>5.能正常运行便是安装成功，接下来安装docker-compose，先找进入以下页面，选择Linux：</h3><p><img src="../img/docker5.png" alt="Alt"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo curl -L <span class="string">"https://github.com/docker/compose/releases/download/1.25.5/docker-compose-<span class="variable">$(uname -s)</span>-<span class="variable">$(uname -m)</span>"</span> -o /usr/<span class="built_in">local</span>/bin/docker-compose</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +x /usr/<span class="built_in">local</span>/bin/docker-compose</span><br></pre></td></tr></table></figure>
+<h3 id="6-点击command-completion，跳转页面："><a href="#6-点击command-completion，跳转页面：" class="headerlink" title="6. 点击command completion，跳转页面："></a>6. 点击command completion，跳转页面：</h3><p><img src="../img/docker6.png" alt="Alt"></p>
+<h3 id="7-找到Linux，运行这个："><a href="#7-找到Linux，运行这个：" class="headerlink" title="7. 找到Linux，运行这个："></a>7. 找到Linux，运行这个：</h3><p><img src="../img/docker7.png" alt="Alt"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo curl -L https://raw.githubusercontent.com/docker/compose/1.25.5/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose</span><br></pre></td></tr></table></figure>
+
+<h3 id="8-最后查看docker-compose版本即可："><a href="#8-最后查看docker-compose版本即可：" class="headerlink" title="8. 最后查看docker-compose版本即可："></a>8. 最后查看docker-compose版本即可：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker-compose --version</span><br></pre></td></tr></table></figure>
+
+<h3 id="此为个人学习记录，如您有幸看到，发现问题请指正。"><a href="#此为个人学习记录，如您有幸看到，发现问题请指正。" class="headerlink" title="此为个人学习记录，如您有幸看到，发现问题请指正。"></a>此为个人学习记录，如您有幸看到，发现问题请指正。</h3>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -202,88 +262,119 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/21/Linux%20docker+docker%20compose%E5%AE%89%E8%A3%85/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/21/My-New-Post/" class="archive-article-date">
-  	<time datetime="2020-04-21T02:48:27.028Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-21</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/04/21/My-New-Post/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo 修改原有样式</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/21/My-New-Post/">Hexo 修改原有样式</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-进入docker官网，找到文档页面，下拉找到小企鹅进入（文档页面网址：-https-docs-docker-com-）"><span class="toc-number">1.</span> <span class="toc-text">1.进入docker官网，找到文档页面，下拉找到小企鹅进入（文档页面网址： https://docs.docker.com/）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-找到左侧install，在右侧找到你的操作系统，我们服务器是linux内核，点击Linux-platforms"><span class="toc-number">2.</span> <span class="toc-text">2.找到左侧install，在右侧找到你的操作系统，我们服务器是linux内核，点击Linux platforms</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-页面显示支持的Ubuntu版本，你的一定得是其中之一"><span class="toc-number">3.</span> <span class="toc-text">3.页面显示支持的Ubuntu版本，你的一定得是其中之一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-按照页面步骤进行安装："><span class="toc-number">4.</span> <span class="toc-text">4.按照页面步骤进行安装：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#现在就要进行真正的安装啦，-复制即可，想自己敲更好。（我只是给显示需要复制的内容，不要从这里复制，从官网直接复制更保险方便，且不容易漏掉一些小短杠-‘-’）"><span class="toc-number">5.</span> <span class="toc-text">现在就要进行真正的安装啦， 复制即可，想自己敲更好。（我只是给显示需要复制的内容，不要从这里复制，从官网直接复制更保险方便，且不容易漏掉一些小短杠 ‘-’）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-能正常运行便是安装成功，接下来安装docker-compose，先找进入以下页面，选择Linux："><span class="toc-number">6.</span> <span class="toc-text">5.能正常运行便是安装成功，接下来安装docker-compose，先找进入以下页面，选择Linux：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-点击command-completion，跳转页面："><span class="toc-number">7.</span> <span class="toc-text">6. 点击command completion，跳转页面：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-找到Linux，运行这个："><span class="toc-number">8.</span> <span class="toc-text">7. 找到Linux，运行这个：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-最后查看docker-compose版本即可："><span class="toc-number">9.</span> <span class="toc-text">8. 最后查看docker-compose版本即可：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#此为个人学习记录，如您有幸看到，发现问题请指正。"><span class="toc-number">10.</span> <span class="toc-text">此为个人学习记录，如您有幸看到，发现问题请指正。</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/21/rotate/" class="archive-article-date">
-  	<time datetime="2020-04-21T02:48:27.028Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-21</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/21/rotate/">CSS3旋转  rotate</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -307,8 +398,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
